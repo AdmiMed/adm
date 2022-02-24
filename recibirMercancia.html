@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Almacen de Medicamentos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="inventario.html">Inventario</a></li>  
+            <li><a href="nuevoProducto.html">Registrar Mercancia</a></li>
+            <li> <a href="entrega-mercancia.html">Entregar Mercancia</a></li>
+            <li><a class="active"  href="recibirMercancia.html">Recibir Mercancia</a></li>
+            
+        </ul>   
+    </header>
+<div class="contenido">
+    <h1 class="titulo"> Recibir Mercancia </h1>
+
+   <p class="msg-corto">De clic en agregar para añadir un producto</p>
+<input type="text" name="busqueda" style="margin-left: 0; "required placeholder="Ingresa un nombre..." autofocus size="30">
+<div hidden>
+<label class="msg-corto"><a href="nuevo-proveedor.html">Proveedor:</label></a><input type="text" name="Proveedor"><br><br>
+                <label class="msg-corto">Cantidad:</label><input type="text" name="cantidad">
+                <label class="msg-corto"> Precio Compra:</label><input type="text" name="precio_compra">
+                <input type="submit" class="boton button" name="aniade" value="Añadir">
+</div>
+
+<br><br>
+    <table style="width: 100%;">
+        <tr>
+            <th> Nombre</th>
+            <th> Sustancia Activa</th>
+            <th> Laboratorio</th>
+            <th> Presentación</th>
+            <th> Cantidad</th>
+            <th> Precio Unitario</th>
+        </tr>     
+    </table>
+    
+
+
+<br>    <div hidden> 
+    <input type="submit" class="boton button" name="imprimir" value="Imprimir" >
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>

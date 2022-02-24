@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Almacen de Medicamentos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>  
+        <ul>
+            <li><a href="inventario.html">Inventario</a></li>  
+            <li><a class="active" href="nuevoProducto.html">Registrar Mercancia</a></li>
+            <li> <a href="entrega-mercancia.html">Entregar Mercancia</a></li>
+            <li><a href="recibirMercancia.html">Recibir Mercancia</a></li>
+            
+        </ul>   
+    </header>
+<div class="contenido">
+    <h1 class="titulo">Registrar Mercancia </h1>
+    <div class="forma">
+        <form name="forma">
+                <label class="msg-corto">  Datos del Producto</label><br><br>
+                
+                <label class="msg-corto">  Nombre:</label><input type="text" name="nombre_producto" autofocus>
+                <label class="msg-corto" >  Sustancia Activa:</label><input type="text" name="sustancia" >
+                <label class="msg-corto" ><a href="nuevo-lab.html">Laboratorior:</a></label><select name="laboratorio">
+                    <option>Gennoma-Lab</option>
+                    <option>Psico-Farma</option>
+                    <option>Medix</option>
+                    </select><br><br>
+                
+                <label class="msg-corto" >Presentación:</label><select name="empaque">
+                    <option>Caja</option>
+                    <option>Frasco</option>
+                    <option>Suspensión</option>
+                    <option>Otro</option>
+
+                    </select><label class="msg-corto" > c/</label><input type="number" name="contenido"><select name="presentacion">
+                        <option>Tabletas</option>
+                        <option>Capsulas</option>
+                        <option>Mililitros</option>
+                        <option>Otro</option>
+                    </select>
+                <label class="msg-corto"> <a href="nuevo-proveedor.html">Proveedor:</a></label><input type="text" name="Proveedor"><br><br>
+                <label class="msg-corto">Cantidad:</label><input type="text" name="cantidad">
+                <label class="msg-corto"> Precio Compra:</label><input type="text" name="precio_compra">
+                <label class="msg-corto"> Precio Venta:</label><input type="text" name="precio_venta"><br><br>
+                <input type="submit" class="boton button" name="agregar" value="Agregar" style="margin-left: 30%;">
+                <input type="submit" class="boton button" name="limpiar" value="Limpiar" style="margin: left 1px;;">
+                
+        </form>
+    </div>
+</div>
+</body>
+<footer>
+
+</footer>
+</html>
