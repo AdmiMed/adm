@@ -24,7 +24,7 @@
                 
                 <label class="msg-corto">  Nombre:</label><input type="text" name="nombre_producto" autofocus>
                 <label class="msg-corto" >  Sustancia Activa:</label><input type="text" name="sustancia" >
-                <label class="msg-corto" ><a href="nuevo-lab.html">Laboratorior:</a></label><select name="laboratorio">
+                <label class="msg-corto" ><a href="nuevo-lab.html">Laboratorio:</a></label><select name="laboratorio">
                     <option>Gennoma-Lab</option>
                     <option>Psico-Farma</option>
                     <option>Medix</option>
@@ -39,13 +39,17 @@
                     </select><label class="msg-corto" > c/</label><input type="number" name="contenido"><select name="presentacion">
                         <option>Tabletas</option>
                         <option>Capsulas</option>
-                        <option>Mililitros</option>
+                        <option>Mililitros</option> 
                         <option>Otro</option>
                     </select>
-                <label class="msg-corto"> <a href="nuevo-proveedor.html">Proveedor:</a></label><input type="text" name="Proveedor"><br><br>
-                <label class="msg-corto">Cantidad:</label><input type="text" name="cantidad">
-                <label class="msg-corto"> Precio Compra:</label><input type="text" name="precio_compra">
-                <label class="msg-corto"> Precio Venta:</label><input type="text" name="precio_venta"><br><br>
+                <label class="msg-corto"> <a href="nuevo-proveedor.html">Proveedor:</a></label><select name="proveedor">
+                    <option></option>
+                    
+                </select>
+                <br><br>
+                <label class="msg-corto" style="margin-left: 200px;">Cantidad:</label><input type="number" name="cantidad">
+                <label class="msg-corto"> Precio Compra:</label><input type="number" name="precio_compra">
+                <label class="msg-corto"> Precio Venta:</label><input type="number" name="precio_venta"><br><br>
                 <input type="submit" class="boton button" name="agregar" value="Agregar" style="margin-left: 30%;">
                 <input type="submit" class="boton button" name="limpiar" value="Limpiar" style="margin: left 1px;;">
                 

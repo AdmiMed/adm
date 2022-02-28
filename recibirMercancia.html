@@ -19,12 +19,19 @@
 <div class="contenido">
     <h1 class="titulo"> Recibir Mercancia </h1>
 
-   <p class="msg-corto">De clic en agregar para añadir un producto</p>
+   <p class="msg-corto">Da click en "Buscar" para obtener información del producto</p>
 <input type="text" name="busqueda" style="margin-left: 0; "required placeholder="Ingresa un nombre..." autofocus size="30">
+<input type="submit" class="boton button" name="buscar" value="Buscar"><br>
 <div hidden>
-<label class="msg-corto"><a href="nuevo-proveedor.html">Proveedor:</label></a><input type="text" name="Proveedor"><br><br>
-                <label class="msg-corto">Cantidad:</label><input type="text" name="cantidad">
-                <label class="msg-corto"> Precio Compra:</label><input type="text" name="precio_compra">
+<label class="msg-corto">Datos del Producto:</label><br>
+<output name="datos-medicamento" class="msg-corto"></output>
+
+<label class="msg-corto"> <a href="nuevo-proveedor.html">Proveedor:</a></label><select name="proveedor">
+    <option></option>
+    
+</select>
+                <label class="msg-corto">Cantidad:</label><input type="number" name="cantidad">
+                <label class="msg-corto"> Precio Compra:</label><input type="number" name="precio_compra">
                 <input type="submit" class="boton button" name="aniade" value="Añadir">
 </div>
 
