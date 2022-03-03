@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Almacen de Medicamentos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a  href="inventario.html">Inventario</a></li>  
+            <li><a href="nuevoProducto.html">Registrar Mercancia</a></li>
+            <li> <a href="entrega-mercancia.html">Entregar Mercancia</a></li>
+            <li><a href="recibirMercancia.html">Recibir Mercancia</a></li>
+            <li><a class="active" href="historial.html">Historial</a></li>
+        </ul>   
+    </header>
+<div class="contenido">
+    <h1 class="titulo"> Historial </h1>
+
+   <p class="msg-corto">En la siguiente tabla se muestran las transacciones realizadas por dia.</p>
+   <label class="msg-corto" >Consultar:</label><select name="consultar">
+    <option>Entradas</option>
+    <option>Salidas</option>
+    </select>
+    
+  <input type="radio"  name="busqueda-cliente">
+  <label class="msg-corto" for="busqueda-cliente">Por Cliente</label> 
+  <input type="radio"  name="busqueda-dia">
+  <label class="msg-corto" for="busqueda-dia">Por Dia</label> <br>
+  
+  
+  <span id="consulta-por-dia" hidden>
+    <label class="msg-corto" style="margin-left: 300px;">Del dia: </label><input type="date" class="input" name="buscar">
+</span>
+    <span id="consulta-por-cliente" hidden>
+    <label class="msg-corto" style="margin-left: 267px;">Nombre:</label><select name="clientes">
+        <option>Cliente 1</option>
+        <option>Cliente 2</option>
+        </select> 
+    </span> 
+    <span id="boton-consulta" hidden>
+    <input type="submit" class="boton button" name="consultar" value="Consultar">
+</span>
+<br><br>
+    <table style="width: 100%;">
+        <tr>
+            <th> Fecha</th>
+            <th> Medicamento</th>
+            <th> TipoTransacción</th>
+            <th> Cliente</th>
+            <th> Existencia</th>
+        </tr>
+ 
+    </table>
+    
+
+
+<br>      
+    <input type="submit" class="boton button" name="imprimir" value="Imprimir">
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>

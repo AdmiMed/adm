@@ -13,7 +13,7 @@
             <li><a href="nuevoProducto.html">Registrar Mercancia</a></li>
             <li> <a href="entrega-mercancia.html">Entregar Mercancia</a></li>
             <li><a class="active"  href="recibirMercancia.html">Recibir Mercancia</a></li>
-            
+            <li><a href="historial.html">Historial</a></li>
         </ul>   
     </header>
 <div class="contenido">
@@ -22,10 +22,10 @@
    <p class="msg-corto">Da click en "Buscar" para obtener información del producto</p>
 <input type="text" name="busqueda" style="margin-left: 0; "required placeholder="Ingresa un nombre..." autofocus size="30">
 <input type="submit" class="boton button" name="buscar" value="Buscar"><br>
-<div hidden>
-<label class="msg-corto">Datos del Producto:</label><br>
-<output name="datos-medicamento" class="msg-corto"></output>
-
+<div id="datos-producto" hidden>
+<label class="msg-corto">Datos del Producto:</label><br><br>
+<output name="datos-medicamento" class="msg-corto"></output><br><br>
+<label class="msg-corto">Datos de Ingreso:</label><br><br>
 <label class="msg-corto"> <a href="nuevo-proveedor.html">Proveedor:</a></label><select name="proveedor">
     <option></option>
     
@@ -35,7 +35,7 @@
                 <input type="submit" class="boton button" name="aniade" value="Añadir">
 </div>
 
-<br><br>
+<br>
     <table style="width: 100%;">
         <tr>
             <th> Nombre</th>
@@ -49,9 +49,11 @@
     
 
 
-<br>    <div hidden> 
-    <input type="submit" class="boton button" name="imprimir" value="Imprimir" >
-    </div>
+<br>    
+<div> 
+    <input type="submit" class="boton button" name="registra" value="Registrar" >
+    <input type="submit" class="boton button" name="imprime" value="Imprimir" >
+</div>
 </body>
 <footer>
 

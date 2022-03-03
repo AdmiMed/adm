@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{
+  font-family: 'Roboto Slab', serif;
+}
 ul{
     top: 0;
     position: fixed;
@@ -49,18 +53,17 @@ background-color: lightgrey;
   }
 
   .titulo{
-    font-family: serif;
     font-size: 50px;
     margin-top: 0;
   }
   .msg-corto{
     margin-top: 0;
-    font-family: serif;
-    font-size: 30px;
+    font-size: 25px;
   }
   table, th {
     border:1px solid black;
     font-size: 25px;
+    transition-duration: 0.4s;
   }
   td{
     border-right: 1px solid black;
@@ -86,9 +89,10 @@ background-color: lightgrey;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 5px 5px 5px 5px;
+    
   }
   input[type=select] {
-    width: 15%;
+    width: 5%;
     margin-left: 1%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -113,7 +117,19 @@ background-color: lightgrey;
     background-repeat: no-repeat;
     padding: 5px 5px 5px 5px;
   }
-
+  input[type=date] {
+    width: 15%;
+    margin-left: 1%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 5px 5px 5px;
+  }
 
   select{
     width: 20%;

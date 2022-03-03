@@ -13,14 +13,14 @@
             <li><a href="nuevoProducto.html">Registrar Mercancia</a></li>
             <li> <a class="active" href="entrega-mercancia.html">Entregar Mercancia</a></li>
             <li><a href="recibirMercancia.html">Recibir Mercancia</a></li>
-            
+            <li><a href="historial.html">Historial</a></li>
         </ul>   
     </header>
 <div class="contenido">
     <h1 class="titulo">Entregar Mercancia </h1>
     <div class="forma">
         <form name="forma">
-                <label class="msg-corto">  Producto</label><br><input type="text" style="margin-left: 0;" name="producto" autofocus>
+                <label class="msg-corto">  Producto</label><br><input type="text" style="margin-left: 0;" name="producto" autofocus placeholder="Ingresa un nombre...">
                 <input type="submit" class="boton button" name="agregar" value="Agregar">
                 <br><br>
                 <table style="width: 100%;">
@@ -32,10 +32,13 @@
                         <th> Precio Final</th>
                     </tr>   
                 </table>  
-            <label class="msg-corto" style="margin-left: 68%;"> TOTAL: $</label><input type="text" name="total" disabled> 
-            <input type="submit" class="boton button" name="datos-cliente" value="Datos Cliente" style="margin-left: 84%;">
+            <label class="msg-corto" style="margin-left: 68.7%;"> TOTAL: $</label><input type="text" name="total" disabled><br><br> 
+            <input type="submit" class="boton button" name="datos-cliente" value="Datos Cliente" style="margin-left: 78%;"><br><br>
             <div id="entrega" style="text-align: center;" hidden >     
-                <label class="msg-corto">  Cliente:</label><input type="text" name="cliente">
+                <label class="msg-corto"><a href="nuevo-cliente.html">Cliente:</a></label><select name="clientes">
+                    <option>Cliente 1</option>
+                    <option>Cliente 2</option>
+                    </select> 
                 <label class="msg-corto" >Tipo:</label><select name="tipo">
                     <option>Venta</option>
                     <option>Envío</option>
@@ -54,6 +57,7 @@
         </form>
     </div>
 </div>
+
 </body>
 <footer>
 
