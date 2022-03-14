@@ -20,15 +20,18 @@
     <h1 class="titulo"> Historial </h1>
 
    <p class="msg-corto">En la siguiente tabla se muestran las transacciones realizadas por dia.</p>
-   <label class="msg-corto" >Consultar:</label><select name="consultar">
+   <label class="etiquetas" >Consultar:</label><select name="consultar">
+    <option disabled selected>-Seleccionar-</option>
     <option>Entradas</option>
     <option>Salidas</option>
     </select>
     
-  <input type="radio"  name="busqueda-cliente">
-  <label class="msg-corto" for="busqueda-cliente">Por Cliente</label> 
-  <input type="radio"  name="busqueda-dia">
-  <label class="msg-corto" for="busqueda-dia">Por Dia</label> <br>
+    <label class="etiquetas"> Por:</label><select name="tipo-consulta">
+        <option disabled selected>-Seleccionar-</option>
+        <option>Cliente</option>
+        <option>Dia</option>
+        <option>Todas</option>
+        </select>
   
   
   <span id="consulta-por-dia" hidden>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Almacen de Medicamentos</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -17,8 +18,9 @@
         </ul>   
     </header>
 <div class="contenido">
-    <h1 class="titulo"> Inventario </h1>
-
+    <h1 class="titulo"> Inventario</h1>
+    <label class="msg-corto" style="margin-left: 50%; font-weight: bold;">Fecha: </label><output class="msg-corto" id="fecha"></output><label class="msg-corto" style="font-weight: bold;"> |  Hora: </label><output class="msg-corto" id="hora"></output>
+    <br><br><br>
    <p class="msg-corto">En la siguiente tabla se muestran los medicamentos registrados en el inventario.</p>
 <input type="text" name="busqueda" style="margin-left: 0; "required placeholder="Ingresa un nombre..." autofocus size="30">
 <input type="submit" class="boton button" name="buscar" value="Buscar">
@@ -71,6 +73,30 @@
     </div>
 </body>
 <footer>
+    <script>
+        $( document ).ready(function() {
+        
+            var now = new Date();
+        
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+            
+            var today =  (day)+"/"+(month)+"/"+now.getFullYear();
+            $("#fecha").val(today);
+        });
 
+        function showTime(){
+        myDate = new Date();
+        hours = myDate.getHours();
+        minutes = myDate.getMinutes();
+        seconds = myDate.getSeconds();
+        if (hours < 10) hours = 0 + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        $("#hora").text(hours+ ":" +minutes+ ":" +seconds);
+        setTimeout("showTime()", 1000);
+
+        }setTimeout("showTime()", 1000);    
+        </script>
 </footer>
 </html>

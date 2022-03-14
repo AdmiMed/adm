@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Almacen de Medicamentos</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -19,18 +21,41 @@
     </header>
     <div class="contenido">
         <h1 class="titulo"> Inicio </h1>
-        <div class="msg-corto">
-            <p>Bienvenido: </p><output name="uuario"></output>
+        <div class="titulo">
+            <p style="margin-left: 35%;">Bienvenido </p><output name="usario"></output>
         </div>
         <div class="fecha">
-            <label>Fecha</label><output name="fecha"></output>
-            <label style="margin-left: 30%;">Hora</label><output name="hora"></output>
+            <label>Fecha</label>
+            <label style="margin-left: 30%;">Hora</label><br><output output style="margin-left: -5%; " id="fecha"></output> 
         </div>
     </div>
-   
-
 </body>
-<footer>
 
+<footer>
+    <script>
+        $( document ).ready(function() {
+        
+            var now = new Date();
+        
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+            
+            var today =  (day)+"-"+(month)+"-"+now.getFullYear();
+            $("#fecha").val(today);
+        });
+
+        function showTime(){
+        myDate = new Date();
+        hours = myDate.getHours();
+        minutes = myDate.getMinutes();
+        seconds = myDate.getSeconds();
+        if (hours < 10) hours = 0 + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        $("#hora").text(hours+ ":" +minutes+ ":" +seconds);
+        setTimeout("showTime()", 1000);
+
+        }setTimeout("showTime()", 1000);    
+        </script>
 </footer>
 </html>

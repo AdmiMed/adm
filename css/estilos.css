@@ -55,10 +55,16 @@ background-color: lightgrey;
   .titulo{
     font-size: 50px;
     margin-top: 0;
+    display: inline;
   }
   .msg-corto{
     margin-top: 0;
     font-size: 25px;
+  }
+  label.etiquetas{
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: bold;
   }
   table, th {
     border:1px solid black;
