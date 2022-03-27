@@ -19,9 +19,9 @@
 <div class="contenido">
     <h1 class="titulo">Entregar Mercancia </h1>
     <div class="forma">
-        <form name="forma">
+        <form id="forma">
                 <label class="msg-corto">  Producto</label><br><input type="text" style="margin-left: 0;" name="producto" autofocus placeholder="Ingresa un nombre...">
-                <input type="submit" class="boton button" name="agregar" value="Agregar">
+                <button class="boton button" id="btn_muestraProductos">Buscar</button>
                 <br><br>
                 <table style="width: 100%;">
                     <tr>
@@ -33,18 +33,21 @@
                     </tr>   
                 </table>  
             <label class="msg-corto" style="margin-left: 68.7%;"> TOTAL: $</label><input type="text" name="total" disabled><br><br> 
-            <input type="submit" class="boton button" name="datos-cliente" value="Datos Cliente" style="margin-left: 78%;"><br><br>
+            <button class="boton button" id="btn_muestraClientes" style="margin-left: 78%">Datos Cliente</button><br><br>
             <div id="entrega" style="text-align: center;" hidden >     
                 <label class="msg-corto"><a href="nuevo-cliente.html">Cliente:</a></label><select name="clientes">
+                    <option selected disabled>Seleccionar</option>
                     <option>Cliente 1</option>
                     <option>Cliente 2</option>
                     </select> 
                 <label class="msg-corto" >Tipo:</label><select name="tipo">
+                    <option selected disabled>Seleccionar</option>
                     <option>Venta</option>
                     <option>Envío</option>
                     </select>
                 <label class="msg-corto" >  Destino:</label><input type="text" name="destino" ><br><br>
                 <label class="msg-corto" >Forma de Pago:</label><select name="forma-pago">
+                    <option selected disabled>Seleccionar</option>
                     <option>Efectivo</option>
                     <option>Transferencia</option>
                     <option>Depósito</option>
@@ -52,12 +55,13 @@
                     </select>
                 <label class="msg-corto"> Se Recibió:</label><input type="number" name="se-pago">
                 <label class="msg-corto"> Resta:</label><input type="number" name="resta"><br><br>
-                <input type="submit" class="boton button" name="entregar" value="Entregar" style="margin-left:0;">
+                <button class="boton button" id="entregar" style="margin-left:0;">Entregar</button>
             </div> 
         </form>
     </div>
 </div>
-
+<script src="js/ctrl-entrega-mercancia.js">
+</script>
 </body>
 <footer>
 
