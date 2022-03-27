@@ -1,7 +1,7 @@
 "use strict";
 var forma = document.getElementById("forma")
 forma["btn_limpia"].addEventListener("click",limpiar,false) 
-
+forma["btn_agrega"].addEventListener("click",agregar,false) 
 function limpiar(){
     forma["nombre_producto"].value = ""
     forma["sustancia"].value = ""
@@ -9,4 +9,7 @@ function limpiar(){
     forma["cantidad"].value = ""
     forma["precio_compra"].value = ""
     forma["precio_venta"].value = ""
+}
+function agregar(){
+    alert("Producto Agregado Correctamente")
 }
