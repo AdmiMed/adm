@@ -9,6 +9,9 @@ function limpiar(){
     forma["cantidad"].value = ""
     forma["precio_compra"].value = ""
     forma["precio_venta"].value = ""
+    forma["laboratorio"].value = "Seleccionar"
+    forma["empaque"].value = "Seleccionar"
+    forma["presentacion"].value = "Seleccionar"
 }
 function agregar(){
     alert("Producto Agregado Correctamente")
