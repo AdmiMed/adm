@@ -19,7 +19,7 @@
 <div class="contenido">
     <h1 class="titulo">Registrar Mercancia </h1>
     <div class="forma">
-        <form name="forma" class="etiquetas">
+        <form id="forma" class="etiquetas">
                 <label class="msg-corto">  Datos del Producto</label><br><br>
                 
                 <label class="msg-corto">  Nombre:</label><input type="text" name="nombre_producto" autofocus>
@@ -50,12 +50,15 @@
                 <label class="msg-corto" style="margin-left: 200px;">Cantidad:</label><input type="number" name="cantidad">
                 <label class="msg-corto"> Precio Compra:</label><input type="number" name="precio_compra">
                 <label class="msg-corto"> Precio Venta:</label><input type="number" name="precio_venta"><br><br>
-                <input type="submit" class="boton button" name="agregar" value="Agregar" style="margin-left: 30%;">
-                <input type="submit" class="boton button" name="limpiar" value="Limpiar" style="margin: left 1px;;">
+                <button class="boton button" id="btn_agrega" style="margin-left: 30%;">Agregar</button> 
+                <button class="boton button" id="btn_limpia" style="margin: left 1px;;">Limpiar</button>
                 
         </form>
     </div>
 </div>
+<script type="module"
+src="js/ctrl-registro.js">
+</script>
 </body>
 <footer>
 
