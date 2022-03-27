@@ -122,6 +122,9 @@ background-color: lightgrey;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 5px 5px 5px 5px;
+    -webkit-appearance: textfield;
+    margin: 0;
+    -moz-appearance: textfield;
   }
   input[type=date] {
     width: 15%;
