@@ -6,10 +6,12 @@ forma["btn_muestraClientes"].addEventListener("click",muestraDatosClientes,false
 function mostrarDatosProducto(){
 
     alert("DATOS DEL PRODUCTO")
+    event.preventDefault();
 }
 
-function muestraDatosClientes(){
+async function muestraDatosClientes(){
     document.getElementById("entrega").hidden = false
+    event.preventDefault();
 }
 
 

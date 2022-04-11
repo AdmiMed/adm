@@ -16,53 +16,57 @@
             <li><a class="active" href="historial.html">Historial</a></li>
         </ul>   
     </header>
-<div class="contenido">
-    <h1 class="titulo"> Historial </h1>
-
-   <p class="msg-corto">En la siguiente tabla se muestran las transacciones realizadas por dia.</p>
-   <label class="etiquetas" >Consultar:</label><select name="consultar">
-    <option disabled selected>-Seleccionar-</option>
-    <option>Entradas</option>
-    <option>Salidas</option>
-    </select>
+    <div class="contenido">
+        <h1 class="titulo"> Historial </h1>
+        <div class="forma">
+            <form id="forma">
+                <p class="msg-corto">En la siguiente tabla se muestran las transacciones realizadas por dia.</p>
+                <label class="etiquetas" >Consultar:</label><select id="cmb_consultar">
+                    <option disabled selected>-Seleccionar-</option>
+                    <option>Entradas</option>
+                    <option>Salidas</option>
+                    </select>
     
-    <label class="etiquetas"> Por:</label><select name="tipo-consulta">
-        <option disabled selected>-Seleccionar-</option>
-        <option>Cliente</option>
-        <option>Dia</option>
-        <option>Todas</option>
-        </select>
-  
-  
-  <span id="consulta-por-dia" hidden>
-    <label class="msg-corto" style="margin-left: 300px;">Del dia: </label><input type="date" class="input" name="buscar">
-</span>
-    <span id="consulta-por-cliente" hidden>
-    <label class="msg-corto" style="margin-left: 267px;">Nombre:</label><select name="clientes">
-        <option>Cliente 1</option>
-        <option>Cliente 2</option>
-        </select> 
-    </span> 
-    <span id="boton-consulta" hidden>
-    <input type="submit" class="boton button" name="consultar" value="Consultar">
-</span>
-<br><br>
-    <table style="width: 100%;">
-        <tr>
-            <th> Fecha</th>
-            <th> Medicamento</th>
-            <th> TipoTransacción</th>
-            <th> Cliente</th>
-            <th> Existencia</th>
-        </tr>
- 
-    </table>
-    
-
-
-<br>      
-    <input type="submit" class="boton button" name="imprimir" value="Imprimir">
+                <label class="etiquetas"> Por:</label><select id="cmb_tipo-consulta">
+                <option disabled selected>-Seleccionar-</option>
+                <option>Todas</option>
+                <option>Cliente</option>
+                <option>Proveedor</option>
+                <option>Dia</option>       
+                </select>
+                <input type="button" class="boton button" id="btn-muestra" value="Siguiente" >
+                <br><br>
+                <label id="etiqueta-presenta" class="msg-corto" style="margin-left: 0px;" hidden>Consulta para</label>
+                    <span id="consulta-por-dia" hidden>
+                        <label class="msg-corto" style="margin-left: 5px;">el dia: </label><input type="date" class="input" name="buscar">
+                    </span>
+                    <span id="consulta-por-cliente" hidden>
+                        <label class="msg-corto" style="margin-left: 5px;">el cliente: </label><select name="clientes">
+                        <option>Cliente 1</option>
+                        <option>Cliente 2</option>
+                        </select> 
+                    </span> 
+                    <span id="boton-consulta" hidden>
+                         <input type="button" class="boton button" id="btn-consultar" value="Consultar">
+                    </span>
+                    <br><br>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th> Fecha</th>
+                            <th> Medicamento</th>
+                            <th> TipoTransacción</th>
+                            <th> Cliente</th>
+                            <th> Existencia</th>
+                        </tr>
+                    </table>     
+                <br>      
+                <span id="imprimir" hidden>
+                <input type="button" class="boton button" id="btn-imprimir" value="Imprimir">
+                </span>
+            </form>
+        </div>       
     </div>
+    <script src="js/CtrlHistorial.js"></script>
 </body>
 <footer>
 
